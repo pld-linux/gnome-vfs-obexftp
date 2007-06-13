@@ -7,6 +7,7 @@ License:	LGPL
 Group:		Applications/Communications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfs-obexftp/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	bdb225175fdf464dd98b579d7e22b077
+URL:		https://launchpad.net/gnome-vfs-obexftp
 BuildRequires:	bluez-libs-devel >= 3.7
 BuildRequires:	dbus-glib-devel >= 0.60
 BuildRequires:	expat-devel
