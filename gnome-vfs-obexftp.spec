@@ -24,7 +24,7 @@ mobile phones and PDAs in GNOME applications such as the file manager.
 Ten pakiet dostarcza klienta OBEX FTP dla aplikacji GNOME-VFS.
 W praktyce pozwala to na dostęp do systemów plików telefonów komórkowych
 i PDA wyposażonych w Bluetooth z poziomu aplikacji GNOME, takich jak
-menedżer plików.
+menadżer plików.
 
 %prep
 %setup -q
