@@ -2,11 +2,12 @@ Summary:	Access to OBEX FTP via gnome-vfs
 Summary(pl.UTF-8):	Dostęp do OBEX FTP za pomocą gnome-vfs
 Name:		gnome-vfs-obexftp
 Version:	0.3
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Applications/Communications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfs-obexftp/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	bdb225175fdf464dd98b579d7e22b077
+Patch0:		%{name}-free-space.patch
 URL:		https://launchpad.net/gnome-vfs-obexftp
 BuildRequires:	bluez-libs-devel >= 3.7
 BuildRequires:	dbus-glib-devel >= 0.60
@@ -28,6 +29,7 @@ menadżer plików.
 
 %prep
 %setup -q
+%patch0
 
 %build
 %configure \
