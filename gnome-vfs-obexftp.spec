@@ -5,7 +5,7 @@ Version:	0.3
 Release:	2
 License:	LGPL
 Group:		Applications/Communications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfs-obexftp/%{version}/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-vfs-obexftp/0.3/%{name}-%{version}.tar.bz2
 # Source0-md5:	bdb225175fdf464dd98b579d7e22b077
 Patch0:		%{name}-free-space.patch
 URL:		https://launchpad.net/gnome-vfs-obexftp
@@ -15,6 +15,7 @@ BuildRequires:	expat-devel
 BuildRequires:	glib2-devel >= 1:2.6.0
 BuildRequires:	gnome-vfs2-devel >= 2.12.0.1
 BuildRequires:	openobex-devel >= 1.2
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package provides an OBEX FTP client for GNOME-VFS applications.
@@ -22,10 +23,10 @@ In practice, this lets you access the file system Bluetooth equipped
 mobile phones and PDAs in GNOME applications such as the file manager.
 
 %description -l pl.UTF-8
-Ten pakiet dostarcza klienta OBEX FTP dla aplikacji GNOME-VFS.
-W praktyce pozwala to na dostęp do systemów plików telefonów komórkowych
+Ten pakiet dostarcza klienta OBEX FTP dla aplikacji GNOME-VFS. W
+praktyce pozwala to na dostęp do systemów plików telefonów komórkowych
 i PDA wyposażonych w Bluetooth z poziomu aplikacji GNOME, takich jak
-menadżer plików.
+zarządca plików.
 
 %prep
 %setup -q
