@@ -14,6 +14,7 @@ BuildRequires:	expat-devel
 BuildRequires:	glib2-devel >= 1:2.6.0
 BuildRequires:	gnome-vfs2-devel >= 2.12.0.1
 BuildRequires:	openobex-devel >= 1.2
+BuildRequires:  pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
